@@ -6,11 +6,11 @@ class Mdiff < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/mutinyhq/mdiff/releases/download/v#{version}/mdiff-aarch64-apple-darwin.tar.gz"
-      sha256 "c26016d28844097f7fece4deb273c4746e5e9f3ee8032557a65552760f2fbb6e"
+      url "https://github.com/mutinyhq/mdiff/releases/download/v0.1.0/mdiff-aarch64-apple-darwin.tar.gz"
+      sha256 "d10dacdcd82fe743be84a63f0b1255e57961c475758c07b942d03a6252af5519"
     else
-      url "https://github.com/mutinyhq/mdiff/releases/download/v#{version}/mdiff-x86_64-apple-darwin.tar.gz"
-      sha256 "4a1e934fece430cec643dcef922e870573300a0babb6ebe24d35e188a7bbe9a2"
+      url "https://github.com/mutinyhq/mdiff/releases/download/v0.1.0/mdiff-x86_64-apple-darwin.tar.gz"
+      sha256 "7e09736b216ea523e4d8000b58b2b77d39d5aeac7b3cd6e5d4dbc51d78dfb756"
     end
   end
 
@@ -19,6 +19,6 @@ class Mdiff < Formula
   end
 
   test do
-    assert_match "mdiff", shell_output("#{bin}/mdiff --help")
+    assert_match "mdiff", shell_output("\#{bin}/mdiff --help")
   end
 end
