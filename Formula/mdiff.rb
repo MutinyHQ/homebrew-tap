@@ -7,10 +7,10 @@ class Mdiff < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/mutinyhq/mdiff/releases/download/v0.1.0/mdiff-aarch64-apple-darwin.tar.gz"
-      sha256 "03da77ed83957e7670ee09c40ce1175c0bfb4ce920d9128d988a76adf67c1023"
+      sha256 "d9d25ddf5838c7d453753d2450bbca2afb19dda0ba191076a56f90844528f95a"
     else
       url "https://github.com/mutinyhq/mdiff/releases/download/v0.1.0/mdiff-x86_64-apple-darwin.tar.gz"
-      sha256 "3aa3029196de1359845dad0185ddd1cd2ff2e924b410fbc1cde88a2ac8737098"
+      sha256 "775a7111b3c8feb3cff392d45240a10db960025a3a9988edfa5f44480517ebba"
     end
   end
 
