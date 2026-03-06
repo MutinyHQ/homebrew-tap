@@ -2,15 +2,15 @@ class Mdiff < Formula
   desc "TUI git diff viewer with worktree management"
   homepage "https://github.com/mutinyhq/mdiff"
   license "MIT"
-  version "0.1.12"
+  version "0.1.13"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/mutinyhq/mdiff/releases/download/v0.1.12/mdiff-aarch64-apple-darwin.tar.gz"
-      sha256 "f879525753c3c763009236d2143518ea9e528fe8b7a1c79b3b7877d89c348105"
+      url "https://github.com/mutinyhq/mdiff/releases/download/v0.1.13/mdiff-aarch64-apple-darwin.tar.gz"
+      sha256 "bc8d5c0a88df7286570469bf7b3cf34f02c709f7c3677007cec6ecf53ec09f03"
     else
-      url "https://github.com/mutinyhq/mdiff/releases/download/v0.1.12/mdiff-x86_64-apple-darwin.tar.gz"
-      sha256 "18e921b25f527cd3ccb789650d03acd5a6a3345deef255e8186cce2829091236"
+      url "https://github.com/mutinyhq/mdiff/releases/download/v0.1.13/mdiff-x86_64-apple-darwin.tar.gz"
+      sha256 "424ef30b60ca043db3ec8ac22a70a1e91ecd42bc40cfe17d679386e379a010ae"
     end
   end
 
